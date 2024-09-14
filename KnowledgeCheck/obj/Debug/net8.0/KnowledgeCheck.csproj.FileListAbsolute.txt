@@ -1,0 +1,15 @@
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\bin\Debug\net8.0\KnowledgeCheck.exe
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\bin\Debug\net8.0\KnowledgeCheck.deps.json
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\bin\Debug\net8.0\KnowledgeCheck.runtimeconfig.json
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\bin\Debug\net8.0\KnowledgeCheck.dll
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\bin\Debug\net8.0\KnowledgeCheck.pdb
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.AssemblyInfoInputs.cache
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.AssemblyInfo.cs
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.csproj.CoreCompileInputs.cache
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.sourcelink.json
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.dll
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\refint\KnowledgeCheck.dll
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.pdb
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\KnowledgeCheck.genruntimeconfig.cache
+C:\Users\brett\Documents\code-you\SDC1-Knowledge-Check-2\KnowledgeCheck\obj\Debug\net8.0\ref\KnowledgeCheck.dll

@@ -5,98 +5,101 @@ namespace KnowledgeCheck;
 
 internal class UILogic : HelperFunctions
 {
-    public static void UISwitchLogic(int input)
+    public static void UISwitchLogic(List<Object> recordList, int input)
     {
-        
-        List<Food> _foodList = new List<Food>();
         while (true)
         {
-            Console.ReadLine();
-
             switch (input)
             {
                 // Add a Meat item
                 case 1:
                     var newMeatItem = new Meat();
-                    var options = NewOptions();
-                    Console.WriteLine("What is the name of the Meat item?");
+                    
+                    Console.WriteLine("What is the name of the Meat item?\n");
                     newMeatItem.Name = Console.ReadLine()!;
 
-                    Console.WriteLine("Give a description of the Meat item?");
+                    Console.WriteLine("Give a description of the Meat item?\n");
                     newMeatItem.Description = Console.ReadLine()!;
 
-                    Console.WriteLine("What is the price of the Meat item?");
+                    Console.WriteLine("What is the price of the Meat item?\n");
                     newMeatItem.Price = decimal.Parse(Console.ReadLine()!);
 
-                    Console.WriteLine("What is the quantity of the Meat item?");
+                    Console.WriteLine("What is the quantity of the Meat item?\n");
                     newMeatItem.Quantity = int.Parse(Console.ReadLine()!);
 
-                    Console.WriteLine("Is the Meat item fresh, frozen, or from the deli?");
+                    Console.WriteLine("Is the Meat item fresh, frozen, or from the deli?\n");
                     newMeatItem.FreshFrozenDeli = Console.ReadLine()!;
 
-                    _foodList.AddFoodItem(newMeatItem);
-
-                    JsonSerializer.Serialize(value: newMeatItem, options: options);
+                    AddFoodItem(newMeatItem, recordList);
                     break;
+                    
 
                 // Add a Vegetable item
                 case 2:
                     var newVegetableItem = new Vegetable();
-                    var options2 = NewOptions();
-
-                    Console.WriteLine("What is the name of the Vegetable item?");
+                    
+                    Console.WriteLine("What is the name of the Vegetable item?\n");
                     newVegetableItem.Name = Console.ReadLine()!;
 
-                    Console.WriteLine("Give a description of the Vegetable item?");
+                    Console.WriteLine("Give a description of the Vegetable item?\n");
                     newVegetableItem.Description = Console.ReadLine()!;
 
-                    Console.WriteLine("What is the price of the Vegetable item?");
+                    Console.WriteLine("What is the price of the Vegetable item?\n");
                     newVegetableItem.Price = decimal.Parse(Console.ReadLine()!);
 
-                    Console.WriteLine("What is the quantity of the Vegetable item?");
+                    Console.WriteLine("What is the quantity of the Vegetable item?\n");
                     newVegetableItem.Quantity = int.Parse(Console.ReadLine()!);
 
-                    Console.WriteLine("Is the Vegetable item fresh, frozen, or canned?");
+                    Console.WriteLine("Is the Vegetable item fresh, frozen, or canned?\n");
                     newVegetableItem.FreshFrozenCanned = Console.ReadLine()!;
 
-                    JsonSerializer.Serialize(value: newVegetableItem, options: options2);
+                    AddFoodItem(newVegetableItem, recordList);
                     break;
+                    
 
                 // Add a Processed Food item
                 case 3:
                     var newProcessedFoodItem = new ProcessedFood();
-                    var options3 = NewOptions();
-
-                    Console.WriteLine("What is the name of the Processed Food item?");
+                    
+                    Console.WriteLine("What is the name of the Processed Food item?\n");
                     newProcessedFoodItem.Name = Console.ReadLine()!;
 
-                    Console.WriteLine("Give a description of the Processed Food item?");
+                    Console.WriteLine("Give a description of the Processed Food item?\n");
                     newProcessedFoodItem.Description = Console.ReadLine()!;
 
-                    Console.WriteLine("What is the price of the Processed Food item?");
+                    Console.WriteLine("What is the price of the Processed Food item?\n");
                     newProcessedFoodItem.Price = decimal.Parse(Console.ReadLine()!);
 
-                    Console.WriteLine("What is the quantity of the Processed Food item?");
+                    Console.WriteLine("What is the quantity of the Processed Food item?\n");
                     newProcessedFoodItem.Quantity = int.Parse(Console.ReadLine()!);
 
-                    Console.WriteLine("What is the expiration date of the Processed Food item?");
+                    Console.WriteLine("What is the expiration date of the Processed Food item?\n");
                     newProcessedFoodItem.ExpirationDate = DateTime.Parse(Console.ReadLine()!);
 
-                    JsonSerializer.Serialize(value: newProcessedFoodItem, options: options3);
+                    AddFoodItem(newProcessedFoodItem, recordList);
                     break;
+                    
                 
                 // Keep the loop going until the user enters a valid input    
                 default:
                     Console.WriteLine("Invalid input. Please try again.");
+                    Console.WriteLine("Press 1 to add a Meat item");
+                    Console.WriteLine("Press 2 to add a Vegetable item");
+                    Console.WriteLine("Press 3 to add a Processed Food item");
+                    try
+                    {
+                        input = int.Parse(Console.ReadLine()!);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Invalid input.");
+                        Console.WriteLine(e);
+                        input = 0;
+                    }
                     continue;
             }
-        }
-    }
 
-    public static void DisplayChoiceMenu()
-    {
-        Console.WriteLine("Press 1 to add a Meat item");
-        Console.WriteLine("Press 2 to add a Vegetable item");
-        Console.WriteLine("Press 3 to add a Processed Food item");
+            break;
+        }
     }
 }
