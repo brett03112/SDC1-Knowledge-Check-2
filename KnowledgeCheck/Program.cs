@@ -28,7 +28,7 @@ for (int i = 0; i < numberOfGroceryItems; i++)
 
 	
 	UILogic.UISwitchLogic(groceryList, input);
-	Console.Clear();	
+	Console.WriteLine("\n\n\n");	
 }
 
 

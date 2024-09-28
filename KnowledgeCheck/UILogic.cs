@@ -17,18 +17,23 @@ internal class UILogic : HelperFunctions
                     
                     Console.WriteLine("What is the name of the Meat item?\n");
                     newMeatItem.Name = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("Give a description of the Meat item?\n");
                     newMeatItem.Description = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("What is the price of the Meat item?\n");
                     newMeatItem.Price = decimal.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("What is the quantity of the Meat item?\n");
                     newMeatItem.Quantity = int.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("Is the Meat item fresh, frozen, or from the deli?\n");
                     newMeatItem.FreshFrozenDeli = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     AddFoodItem(newMeatItem, recordList);
                     break;
@@ -40,18 +45,23 @@ internal class UILogic : HelperFunctions
                     
                     Console.WriteLine("What is the name of the Vegetable item?\n");
                     newVegetableItem.Name = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("Give a description of the Vegetable item?\n");
                     newVegetableItem.Description = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("What is the price of the Vegetable item?\n");
                     newVegetableItem.Price = decimal.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("What is the quantity of the Vegetable item?\n");
                     newVegetableItem.Quantity = int.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("Is the Vegetable item fresh, frozen, or canned?\n");
                     newVegetableItem.FreshFrozenCanned = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     AddFoodItem(newVegetableItem, recordList);
                     break;
@@ -63,18 +73,23 @@ internal class UILogic : HelperFunctions
                     
                     Console.WriteLine("What is the name of the Processed Food item?\n");
                     newProcessedFoodItem.Name = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("Give a description of the Processed Food item?\n");
                     newProcessedFoodItem.Description = Console.ReadLine()!;
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("What is the price of the Processed Food item?\n");
                     newProcessedFoodItem.Price = decimal.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("What is the quantity of the Processed Food item?\n");
                     newProcessedFoodItem.Quantity = int.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\n");
 
                     Console.WriteLine("What is the expiration date of the Processed Food item?\n");
                     newProcessedFoodItem.ExpirationDate = DateTime.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\n");
 
                     AddFoodItem(newProcessedFoodItem, recordList);
                     break;

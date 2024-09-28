@@ -6,39 +6,28 @@ namespace KnowledgeCheck;
 
 
 internal class HelperFunctions 
-{
-    private static List<Dictionary<string, object>>? _foodList;
-
-    private static Dictionary<string, Meat>? _meatDictionary;
-
-    private static Dictionary<string, ProcessedFood>? _processedFoodDictionary;
-
-    private static Dictionary<string, Vegetable>? _vegetableDictionary;
-    
-    
-    
-        /// <summary>
-        /// Adds a food item to the appropriate dictionary based on its type
-        /// </summary>
-        /// <param name="item">The food item to add</param>
-        /// <exception cref="ArgumentException">If the item is null</exception>
-        /// <exception cref="ArgumentNullException">If the item is null</exception>
+{    
+    /// <summary>
+    /// Adds the food item to the food list. If the item is a subtype of Food, it is added
+    /// to the list. If the item is not a subtype of Food, it is not added to the list.
+    /// </summary>
+    /// <param name="item">The item to add to the list.</param>
+    /// <param name="foodList">The list to which the item is added.</param>
     public static void AddFoodItem(Food? item, List<Object> foodList)
     {
-        if (item is Meat)
+        if (item is Meat meat)
         {
-            foodList.Add(item);
+            foodList.Add(meat);
         }
-        else if (item is ProcessedFood)
+        else if (item is ProcessedFood processedFood)
         {
-            foodList.Add(item as ProcessedFood);
+            foodList.Add(processedFood);
         }
-        else if (item is Vegetable)
+        else if (item is Vegetable vegetable)
         {
-            foodList.Add(item as Vegetable);
+            foodList.Add(vegetable);
         }
     }
-
     
     /// <summary>
     /// Returns a JsonSerializerOptions object with the following settings:
